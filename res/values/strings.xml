@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Which One</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Preferences Strings -->
+    <string name="shared_preferences">SHARED_PREFERENCES</string>
+    <string name="pref_user_id">USER_ID</string>
+    <string name="pref_display_name">DISPLAY_NAME</string>
+    <string name="pref_level">LEVEL</string>
+    <string name="pref_xp">XP</string>
+    <string name="pref_using_image">USING_IMAGE</string>
+    <string name="pref_image_uploaded">IMAGE_UPLOADED</string>
+    <string name="device_os">ANDROID</string>
+
+    <!-- Splash Activity -->
+    <string name="odd_title">Odd</string>
+    <string name="button_sign_up">SIGN UP</string>
+    <string name="button_connect">CONNECT</string>
+
+    <!-- Login Activity -->
+    <string name="title_sign_up">Sign Up</string>
+    <string name="input_name_hint">Name</string>
+    <string name="text_preview_default">Unknown</string>
+    <string name="button_pick_image">Pick an image</string>
+    <string name="button_confirm_sign_up">Confirm</string>
+
+    <!-- Main Activity -->
+    <string name="button_play">PLAY</string>
+    <string name="button_profile">PROFILE</string>
+    <string name="button_extra">EXTRA</string>
+    <string name="button_settings">SETTINGS</string>
+    <string name="button_rankings">RANKINGS</string>
+    <!-- Main Activity Play Scene -->
+    <string name="button_continue">Continue</string>
+    <string name="button_new_match">NEW MATCH</string>
+    <string name="button_game_list">Game List</string>
+
+    <!-- Match Activity -->
+    <string name="find_match">FIND MATCH</string>
+    <string name="finding_match">FINDING MATCH</string>
+    <string name="start_game">START</string>
+    <string name="cancel_match">Cancel</string>
+    <!-- Match Activity Opponent Configuration Panel -->
+    <string name="config_opponent">Opponent</string>
+    <string name="opponent_random">Random</string>
+    <string name="opponent_random_description">Match with the first available player</string>
+    <string name="opponent_friend">Friend</string>
+    <string name="opponent_friend_description">Match with a player from your friend list</string>
+    <!-- Match Activity Mode Configuration Panel -->
+    <string name="config_mode">Mode</string>
+    <string name="mode_normal">Normal</string>
+    <!--
+        <string name="mode_normal_description">Find the answer which has the described attribute</string>
+        -->
+    <string name="mode_normal_description">Description</string>
+    <string name="mode_reverse">Reverse</string>
+    <!--
+        <string name="mode_reverse_description">Find the answer which doesn\'t share the described attribute with the rest</string>
+        -->
+    <string name="mode_reverse_description">Description</string>
+    <string name="mode_hardcore">Hardcore</string>
+    <!--
+        <string name="mode_hardcore_description">Find the answer which doesn\'t share the same attribute with the rest</string>
+        -->
+    <string name="mode_hardcore_description">Description</string>
+    <!-- Match Activity Category Configuration Panel -->
+    <string name="config_category">Category</string>
+    <!-- Match Activity -->
+
+    <!-- Post Game Activity -->
+    <string name="review_match">REVIEW MATCH</string>
+    <string name="continue_">CONTINUE</string>
+    <!-- Post Game Activity -->
+
+    <!-- Categories -->
+    <string name="category_random">Random</string>
+    <string name="category_animals">Animals</string>
+    <string name="category_numbers">Numbers</string>
+    <string name="category_countries">Countries</string>
+    <string name="category_movies">Movies</string>
+    <string name="category_brands">Brands</string>
+    <string name="category_songs">Songs</string>
+    <string name="category_famous_people">Famous People</string>
+</resources>

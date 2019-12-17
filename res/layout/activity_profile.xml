@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="user"
+            type="com.panos.oddandroid.model.User" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_layout_gradient"
+        tools:context=".activity.ProfileActivity">
+
+        <com.panos.oddandroid.customview.BackgroundCornerPattern
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <include
+            android:id="@+id/userPortrait"
+            layout="@layout/layout_portrait_user_xpbar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            bind:user="@{user}" />
+
+        <View
+            android:id="@+id/userNameTextBg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:background="@drawable/background_name_menu"
+            app:layout_constraintBottom_toBottomOf="@+id/userNameText"
+            app:layout_constraintStart_toStartOf="@+id/userNameText"
+            app:layout_constraintEnd_toEndOf="@+id/userNameText"
+            app:layout_constraintTop_toTopOf="@+id/userNameText" />
+
+        <TextView
+            android:id="@+id/userNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@{user.displayName}"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userPortrait" />
+
+        <View
+            android:id="@+id/editTextPortrait"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/portrait_edit_image"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/userNameText"
+            app:layout_constraintEnd_toEndOf="@+id/userNameText"
+            app:layout_constraintStart_toStartOf="@+id/userNameText"
+            app:layout_constraintTop_toTopOf="@+id/userNameText" />
+
+        <View
+            android:id="@+id/editButton"
+            android:background="@drawable/vector_indicator_edit"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/userPortrait"
+            app:layout_constraintEnd_toStartOf="@+id/userPortrait"
+            app:layout_constraintTop_toTopOf="@+id/userPortrait" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPortrait"
+            tools:listitem="@layout/recyclerview_challenge">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Delete"
+            app:layout_constraintBottom_toBottomOf="@+id/userPortrait"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/userPortrait" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

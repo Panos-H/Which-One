@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:splitMotionEvents="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/opponentButtonsLayout"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp">
+
+    <com.panos.oddandroid.customview.OptionButton
+        android:id="@+id/randomButton"
+        style="@style/MatchOpponentConfigButton"
+        app:dashPercentage="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.panos.oddandroid.customview.OptionButton
+        android:id="@+id/friendButton"
+        android:alpha="0.5"
+        style="@style/MatchOpponentConfigButton"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/randomButton" />
+
+    <com.panos.oddandroid.customview.OptionButton
+        android:id="@+id/botButton"
+        style="@style/MatchOpponentConfigButton"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friendButton" />
+
+    <ImageView
+        style="@style/MatchOpponentConfigButtonIcon"
+        android:id="@+id/randomButtonImage"
+        app:layout_constraintBottom_toBottomOf="@+id/randomButton"
+        app:layout_constraintStart_toStartOf="@+id/randomButton"
+        app:layout_constraintTop_toTopOf="@+id/randomButton"
+        app:srcCompat="@drawable/vector_player_image" />
+
+    <TextView
+        android:id="@+id/randomButtonDescription"
+        android:text="@string/opponent_random_description"
+        style="@style/MatchOpponentConfigButtonDescription"
+        app:layout_constraintEnd_toEndOf="@+id/randomButton"
+        app:layout_constraintStart_toEndOf="@+id/randomButtonImage"
+        app:layout_constraintTop_toBottomOf="@+id/randomButtonTitle" />
+
+    <TextView
+        android:id="@+id/randomButtonTitle"
+        android:text="@string/opponent_random"
+        style="@style/MatchOpponentConfigButtonTitle"
+        app:layout_constraintStart_toEndOf="@+id/randomButtonImage"
+        app:layout_constraintTop_toTopOf="@+id/randomButtonImage" />
+
+    <ImageView
+        style="@style/MatchOpponentConfigButtonIcon"
+        android:id="@+id/friendButtonImage"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="@+id/friendButton"
+        app:layout_constraintStart_toStartOf="@+id/randomButton"
+        app:layout_constraintTop_toTopOf="@+id/friendButton"
+        app:srcCompat="@drawable/vector_player_image" />
+
+    <TextView
+        android:id="@+id/friendButtonTitle"
+        android:alpha="0.5"
+        android:text="@string/opponent_friend"
+        style="@style/MatchOpponentConfigButtonTitle"
+        app:layout_constraintStart_toEndOf="@+id/friendButtonImage"
+        app:layout_constraintTop_toTopOf="@+id/friendButtonImage" />
+
+    <TextView
+        android:id="@+id/friendButtonDescription"
+        android:alpha="0.5"
+        android:text="@string/opponent_friend_description"
+        style="@style/MatchOpponentConfigButtonDescription"
+        app:layout_constraintEnd_toEndOf="@+id/friendButton"
+        app:layout_constraintStart_toEndOf="@+id/friendButtonImage"
+        app:layout_constraintTop_toBottomOf="@+id/friendButtonTitle" />
+
+    <ImageView
+        style="@style/MatchOpponentConfigButtonIcon"
+        android:id="@+id/botButtonImage"
+        app:layout_constraintBottom_toBottomOf="@+id/botButton"
+        app:layout_constraintStart_toStartOf="@+id/randomButton"
+        app:layout_constraintTop_toTopOf="@+id/botButton"
+        app:srcCompat="@drawable/vector_player_image" />
+
+    <TextView
+        android:id="@+id/botButtonTitle"
+        android:text="Bot"
+        style="@style/MatchOpponentConfigButtonTitle"
+        app:layout_constraintStart_toEndOf="@+id/botButtonImage"
+        app:layout_constraintTop_toTopOf="@+id/botButtonImage" />
+
+    <TextView
+        android:id="@+id/botButtonDescription"
+        android:text="Bot"
+        style="@style/MatchOpponentConfigButtonDescription"
+        app:layout_constraintEnd_toEndOf="@+id/botButton"
+        app:layout_constraintStart_toEndOf="@+id/botButtonImage"
+        app:layout_constraintTop_toBottomOf="@+id/botButtonTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

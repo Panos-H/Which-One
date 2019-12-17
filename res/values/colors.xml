@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimaryFaded">#6600cccc</color>
+    <color name="colorPrimaryHighlight">#00ffff</color>
+    <color name="colorPrimary">#00cccc</color>
+    <color name="colorPrimaryDark">#008888</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:ignore="PrivateResource">@color/colorPrimary</color>
+
+    <color name="colorBackgroundDark">#000022</color>
+    <color name="colorBackgroundGray">#444444</color>
+</resources>

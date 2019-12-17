@@ -1,0 +1,44 @@
+<resources>
+    <declare-styleable name="QuestionIndicator">
+        <!-- Question Indicator's starting angle on top of a virtual circle
+         Circle points( 0rad: east, 90rad: south, 180rad: west, 270rad: north ) <-> Clockwise -->
+        <attr name="startAngle" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="AnswerIndicator">
+        <!-- Answer Indicator's Emboss Filter horizontal light direction
+         Light direction( 0: north, +0.5: north-east, -0.5: north-west ) -->
+        <attr name="lightHorizontalDirection" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="OptionButton">
+        <!-- Option Button's initial Border Path Dash percentage
+         Dash(clip) percentage( 0: fully shown Path(Selected), 100(default: fully clipped Path(Not selected) ) -->
+        <attr name="dashPercentage" format="integer"/>
+        <!-- Option Button's Border Path corner radius based on its Height dimension | Fixed Heights
+         Corner radius percentage( 0: pointy edges, 1(default): edges form circles ) -->
+        <attr name="cornerRadiusHeightPercent" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="LayoutBackground">
+        <!-- Layout Background's Border Path corner radius based on its Width dimension | Fixed Widths
+         Corner radius percentage( 0: pointy edges, 1(default): edges form circles ) -->
+        <attr name="cornerRadiusWidthPercent" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="PathTimer">
+        <!-- Path Timer Arc Starting point's distance from Top point | Offset of Arc's end point as well
+         Corner radius percentage( 0: pointy edges, 1(default): edges form circles ) -->
+        <attr name="borderOffset" format="float"/>
+        <attr name="pathAngle" format="integer"/>
+        <attr name="angleOffset" format="integer"/>
+        <attr name="pathWidth" format="float"/>
+        <attr name="pathColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="MyButton">
+        <!-- Secondary Button's Text | Appears in the middle of the View -->
+        <attr name="text" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="PlayerImageView">
+        <!-- Indicates which Player the Image View is representing | User(default) or Enemy -->
+        <attr name="user" format="boolean"/>
+        <!-- User's (Enemy too) name | Used first letter in case image absence-->
+        <attr name="user_name" format="string"/>
+    </declare-styleable>
+</resources>

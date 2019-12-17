@@ -1,0 +1,212 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryHighlight</item>
+        <item name="android:textViewStyle">@style/WhiteText</item>
+    </style>
+
+    <style name="WhiteText" parent="android:Widget.TextView">
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <!-- SPLASH LAYOUT STYLES -->
+    <!-- SPLASH LAYOUT STYLES END -->
+
+    <!-- LOGIN LAYOUT STYLES -->
+    <!-- LOGIN LAYOUT STYLES END -->
+
+    <!-- MAIN LAYOUT STYLES -->
+    <!-- MAIN LAYOUT STYLES END -->
+
+    <!-- MATCH LAYOUT STYLES -->
+
+        <!-- CONFIGURATION LAYOUT STYLES -->
+
+            <!-- Configuration Background Style -->
+            <style name="MatchConfigBackground">
+                <item name="android:layout_width">0dp</item>
+                <item name="android:layout_height">0dp</item>
+                <item name="cornerRadiusWidthPercent">0.05</item>
+            </style>
+            <!-- Configuration Title Style -->
+            <style name="MatchConfigTitle">
+                <item name="android:layout_width">wrap_content</item>
+                <item name="android:layout_height">wrap_content</item>
+                <item name="android:layout_marginStart">24dp</item>
+                <item name="android:layout_marginLeft">24dp</item>
+                <item name="android:layout_marginTop">16dp</item>
+                <item name="android:textSize">24sp</item>
+            </style>
+            <!-- Configuration Selection Style -->
+            <style name="MatchConfigSelect">
+                <item name="android:layout_width">wrap_content</item>
+                <item name="android:layout_height">wrap_content</item>
+                <item name="android:layout_marginStart">32dp</item>
+                <item name="android:layout_marginLeft">32dp</item>
+                <item name="android:textSize">14sp</item>
+            </style>
+            <!-- Configuration Selection Background Style -->
+            <style name="MatchConfigSelectionBg">
+                <item name="android:layout_width">0dp</item>
+                <item name="android:layout_height">0dp</item>
+                <item name="android:background">@drawable/background_view_rounded_rect</item>
+                <item name="android:scaleX">1.4</item>
+                <item name="android:scaleY">1.4</item>
+            </style>
+            <!-- Configuration Expand Button Style -->
+            <style name="MatchConfigExpandButton">
+                <item name="android:layout_width">0dp</item>
+                <item name="android:layout_height">0dp</item>
+                <item name="android:padding">20dp</item>
+                <item name="layout_constraintDimensionRatio">1:1</item>
+            </style>
+
+            <!-- BUTTON LAYOUT STYLES -->
+
+                <!-- Configuration Button Style -->
+                <style name="MatchConfigButton">
+                    <item name="android:layout_width">0dp</item>
+                    <item name="android:layout_height">96dp</item>
+                    <item name="cornerRadiusHeightPercent">0.2</item>
+                </style>
+                <!-- Configuration Button Icon Style -->
+                <style name="MatchConfigButtonIcon">
+                    <item name="android:layout_width">0dp</item>
+                    <item name="android:layout_height">0dp</item>
+                </style>
+                <!-- Configuration Button Title Style -->
+                <style name="MatchConfigButtonTitle">
+                </style>
+                <!-- Configuration Button Description Style -->
+                <style name="MatchConfigButtonDescription">
+                </style>
+
+                <!-- Opponent Configuration Button Style -->
+                <style name="MatchOpponentConfigButton" parent="MatchConfigButton">
+                </style>
+                <!-- Opponent Configuration Button Icon Style -->
+                <style name="MatchOpponentConfigButtonIcon" parent="MatchConfigButtonIcon">
+                    <item name="android:layout_marginStart">24dp</item>
+                    <item name="android:layout_marginLeft">24dp</item>
+                    <item name="android:layout_marginTop">24dp</item>
+                    <item name="android:layout_marginBottom">24dp</item>
+                    <item name="layout_constraintDimensionRatio">1:1</item>
+                </style>
+                <!-- Opponent Configuration Button Title Style -->
+                <style name="MatchOpponentConfigButtonTitle" parent="MatchConfigButtonTitle">
+                    <item name="android:layout_width">wrap_content</item>
+                    <item name="android:layout_height">wrap_content</item>
+                    <item name="android:layout_marginStart">16dp</item>
+                    <item name="android:layout_marginLeft">16dp</item>
+                    <item name="android:textSize">18sp</item>
+                </style>
+                <!-- Opponent Configuration Button Description Style -->
+                <style name="MatchOpponentConfigButtonDescription" parent="MatchConfigButtonDescription">
+                    <item name="android:layout_width">0dp</item>
+                    <item name="android:layout_height">wrap_content</item>
+                    <item name="android:layout_marginStart">16dp</item>
+                    <item name="android:layout_marginLeft">16dp</item>
+                    <item name="android:layout_marginEnd">16dp</item>
+                    <item name="android:layout_marginRight">16dp</item>
+                    <item name="android:textSize">12sp</item>
+                </style>
+
+                <!-- Mode Configuration Button Style -->
+                <style name="MatchModeConfigButton" parent="MatchConfigButton">
+                </style>
+                <!-- Mode Configuration Button Icon Style -->
+                <style name="MatchModeConfigButtonIcon" parent="MatchConfigButtonIcon">
+                    <item name="android:layout_marginStart">24dp</item>
+                    <item name="android:layout_marginLeft">24dp</item>
+                    <item name="android:layout_marginTop">24dp</item>
+                    <item name="android:layout_marginBottom">24dp</item>
+                    <item name="layout_constraintDimensionRatio">1:1</item>
+                </style>
+                <!-- Mode Configuration Button Title Style -->
+                <style name="MatchModeConfigButtonTitle" parent="MatchConfigButtonTitle">
+                    <item name="android:layout_width">wrap_content</item>
+                    <item name="android:layout_height">wrap_content</item>
+                    <item name="android:layout_marginStart">16dp</item>
+                    <item name="android:layout_marginLeft">16dp</item>
+                    <item name="android:textSize">18sp</item>
+                </style>
+                <!-- Mode Configuration Button Description Style -->
+                <style name="MatchModeConfigButtonDescription" parent="MatchConfigButtonDescription">
+                    <item name="android:layout_width">0dp</item>
+                    <item name="android:layout_height">wrap_content</item>
+                    <item name="android:layout_marginStart">16dp</item>
+                    <item name="android:layout_marginLeft">16dp</item>
+                    <item name="android:layout_marginEnd">16dp</item>
+                    <item name="android:layout_marginRight">16dp</item>
+                    <item name="android:textSize">12sp</item>
+                </style>
+
+                <!-- Category Configuration Button Style -->
+                <style name="MatchCategoryConfigButton" parent="MatchConfigButton">
+                </style>
+                <!-- Category Configuration Button Icon Style -->
+                <style name="MatchCategoryConfigButtonIcon" parent="MatchConfigButtonIcon">
+                    <item name="android:layout_width">0dp</item>
+                    <item name="android:layout_height">0dp</item>
+                    <item name="android:layout_marginTop">20dp</item>
+                    <item name="android:layout_marginBottom">8dp</item>
+                    <item name="layout_constraintDimensionRatio">w,1:1</item>
+                </style>
+                <!-- Category Configuration Button Title Style -->
+                <style name="MatchCategoryConfigButtonTitle" parent="MatchConfigButtonTitle">
+                    <item name="android:layout_width">wrap_content</item>
+                    <item name="android:layout_height">wrap_content</item>
+                    <item name="android:layout_marginBottom">12dp</item>
+                    <item name="android:textSize">12sp</item>
+                </style>
+
+            <!-- BUTTON LAYOUT STYLES END -->
+
+        <!-- CONFIGURATION LAYOUT STYLES END -->
+
+    <!-- MATCH LAYOUT STYLES END -->
+
+    <!-- GAME LAYOUT STYLES -->
+
+        <!-- PLAYERS LAYOUT STYLES -->
+            <!-- ANSWER INDICATORS LAYOUT STYLES -->
+            <!-- ANSWER INDICATORS LAYOUT STYLES END -->
+        <!-- PLAYERS LAYOUT STYLES END -->
+
+        <!-- QUESTION LAYOUT STYLES -->
+        <!-- QUESTION LAYOUT STYLES END -->
+
+        <!-- OPTIONS LAYOUT STYLES -->
+
+            <!-- Options Button Style -->
+            <style name="GameOptionsButton">
+                <item name="android:layout_width">0dp</item>
+                <item name="android:layout_height">0dp</item>
+                <item name="android:layout_marginStart">24dp</item>
+                <item name="android:layout_marginLeft">24dp</item>
+                <item name="android:layout_marginEnd">24dp</item>
+                <item name="android:layout_marginRight">24dp</item>
+                <item name="android:onClick">onOptionButtonClick</item>
+            </style>
+            <!-- Options Text Style -->
+            <style name="GameOptionsText">
+                <item name="android:layout_width">wrap_content</item>
+                <item name="android:layout_height">wrap_content</item>
+                <item name="android:textSize">16sp</item>
+            </style>
+
+        <!-- OPTIONS LAYOUT STYLES END -->
+
+    <!-- GAME LAYOUT STYLES END -->
+
+    <!-- POST-GAME LAYOUT STYLES -->
+    <!-- POST-GAME LAYOUT STYLES END -->
+
+</resources>

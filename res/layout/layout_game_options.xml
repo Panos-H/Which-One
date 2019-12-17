@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="challengeModel"
+            type="com.panos.oddandroid.viewmodel.ChallengeGameViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/optionsLayout"
+        android:splitMotionEvents="false"
+        app:phase="@{challengeModel.phase}"
+        app:answerData="@{challengeModel.answerData}">
+
+        <com.panos.oddandroid.customview.OptionButton
+            android:id="@+id/optionButton0"
+            style="@style/GameOptionsButton"
+            app:layout_constraintBottom_toTopOf="@+id/optionButton1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <com.panos.oddandroid.customview.OptionButton
+            android:id="@+id/optionButton1"
+            style="@style/GameOptionsButton"
+            app:layout_constraintBottom_toTopOf="@+id/optionButton2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/optionButton0" />
+
+        <com.panos.oddandroid.customview.OptionButton
+            android:id="@+id/optionButton2"
+            style="@style/GameOptionsButton"
+            app:layout_constraintBottom_toTopOf="@+id/optionButton3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/optionButton1" />
+
+        <com.panos.oddandroid.customview.OptionButton
+            android:id="@+id/optionButton3"
+            style="@style/GameOptionsButton"
+            app:layout_constraintBottom_toTopOf="@+id/optionButton4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/optionButton2" />
+
+        <com.panos.oddandroid.customview.OptionButton
+            android:id="@+id/optionButton4"
+            style="@style/GameOptionsButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/optionButton3" />
+
+        <TextView
+            android:id="@+id/optionText0"
+            style="@style/GameOptionsText"
+            android:text="@{challengeModel.options[0]}"
+            app:layout_constraintBottom_toTopOf="@+id/optionButton1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/optionButton0" />
+
+        <TextView
+            android:id="@+id/optionText1"
+            style="@style/GameOptionsText"
+            android:text="@{challengeModel.options[1]}"
+            app:layout_constraintBottom_toTopOf="@+id/optionButton2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/optionButton1" />
+
+        <TextView
+            android:id="@+id/optionText2"
+            style="@style/GameOptionsText"
+            android:text="@{challengeModel.options[2]}"
+            app:layout_constraintBottom_toTopOf="@+id/optionButton3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/optionButton2" />
+
+        <TextView
+            android:id="@+id/optionText3"
+            style="@style/GameOptionsText"
+            android:text="@{challengeModel.options[3]}"
+            app:layout_constraintBottom_toTopOf="@+id/optionButton4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/optionButton3" />
+
+        <TextView
+            android:id="@+id/optionText4"
+            style="@style/GameOptionsText"
+            android:text="@{challengeModel.options[4]}"
+            app:layout_constraintBottom_toBottomOf="@+id/optionButton4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/optionButton4" />
+
+        <ImageView
+            android:id="@+id/correctAnswerIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/optionButton0"
+            app:layout_constraintStart_toStartOf="@id/optionButton0"
+            app:layout_constraintTop_toTopOf="@id/optionButton0"
+            app:layout_constraintDimensionRatio="1:1"
+            app:srcCompat="@drawable/vector_answer_correct" />
+
+        <ImageView
+            android:id="@+id/wrongAnswerIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/optionButton0"
+            app:layout_constraintStart_toStartOf="@id/optionButton0"
+            app:layout_constraintTop_toTopOf="@id/optionButton0"
+            app:layout_constraintDimensionRatio="1:1"
+            app:srcCompat="@drawable/vector_answer_wrong" />
+
+
+        <ImageView
+            android:id="@+id/enemyAnswerIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="invisible"
+            app:layout_constraintTop_toTopOf="@id/optionButton0"
+            app:layout_constraintBottom_toBottomOf="@id/optionButton0"
+            app:layout_constraintEnd_toEndOf="@id/optionButton0"
+            app:layout_constraintDimensionRatio="1:1"
+            app:srcCompat="@drawable/vector_profile_image_default"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

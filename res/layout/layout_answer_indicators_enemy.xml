@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/enemyAnswerIndicatorsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.panos.oddandroid.customview.AnswerIndicator
+        android:id="@+id/answerIndicatorView0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/answerIndicatorView4"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answerIndicatorView1"
+        app:layout_constraintTop_toTopOf="@+id/answerIndicatorView4"
+        app:lightHorizontalDirection="-0.3" />
+
+    <com.panos.oddandroid.customview.AnswerIndicator
+        android:id="@+id/answerIndicatorView1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/answerIndicatorView4"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/answerIndicatorView0"
+        app:layout_constraintStart_toEndOf="@+id/answerIndicatorView2"
+        app:layout_constraintTop_toTopOf="@+id/answerIndicatorView4"
+        app:lightHorizontalDirection="-0.24" />
+
+    <com.panos.oddandroid.customview.AnswerIndicator
+        android:id="@+id/answerIndicatorView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/answerIndicatorView4"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/answerIndicatorView1"
+        app:layout_constraintStart_toEndOf="@+id/answerIndicatorView3"
+        app:layout_constraintTop_toTopOf="@+id/answerIndicatorView4"
+        app:lightHorizontalDirection="-0.18" />
+
+    <com.panos.oddandroid.customview.AnswerIndicator
+        android:id="@+id/answerIndicatorView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/answerIndicatorView4"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/answerIndicatorView2"
+        app:layout_constraintStart_toEndOf="@+id/answerIndicatorView4"
+        app:layout_constraintTop_toTopOf="@+id/answerIndicatorView4"
+        app:lightHorizontalDirection="-0.12" />
+
+    <com.panos.oddandroid.customview.AnswerIndicator
+        android:id="@+id/answerIndicatorView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/answerIndicatorView9"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/answerIndicatorView3"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lightHorizontalDirection="-0.06" />
+
+    <com.panos.oddandroid.customview.AnswerIndicator
+        android:id="@+id/answerIndicatorView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/answerIndicatorView9"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answerIndicatorView6"
+        app:layout_constraintTop_toTopOf="@+id/answerIndicatorView9"
+        app:lightHorizontalDirection="-0.27" />
+
+    <com.panos.oddandroid.customview.AnswerIndicator
+        android:id="@+id/answerIndicatorView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/answerIndicatorView9"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/answerIndicatorView5"
+        app:layout_constraintStart_toEndOf="@+id/answerIndicatorView7"
+        app:layout_constraintTop_toTopOf="@+id/answerIndicatorView9"
+        app:lightHorizontalDirection="-0.21" />
+
+    <com.panos.oddandroid.customview.AnswerIndicator
+        android:id="@+id/answerIndicatorView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/answerIndicatorView9"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/answerIndicatorView6"
+        app:layout_constraintStart_toEndOf="@+id/answerIndicatorView8"
+        app:layout_constraintTop_toTopOf="@+id/answerIndicatorView9"
+        app:lightHorizontalDirection="-0.15" />
+
+    <com.panos.oddandroid.customview.AnswerIndicator
+        android:id="@+id/answerIndicatorView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/answerIndicatorView9"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/answerIndicatorView7"
+        app:layout_constraintStart_toEndOf="@+id/answerIndicatorView9"
+        app:layout_constraintTop_toTopOf="@+id/answerIndicatorView9"
+        app:lightHorizontalDirection="-0.09" />
+
+    <com.panos.oddandroid.customview.AnswerIndicator
+        android:id="@+id/answerIndicatorView9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/answerIndicatorView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerIndicatorView4"
+        app:lightHorizontalDirection="-0.03" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
